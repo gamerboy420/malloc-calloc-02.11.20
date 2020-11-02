@@ -10,4 +10,4 @@ jobs:
     runs-on: ${{matrix.platform}}
     steps:
       - uses: actions/checkout@v2
-      - run: clang dyn_alok_filtry.c
+      - run: clang 1_jakub.c
