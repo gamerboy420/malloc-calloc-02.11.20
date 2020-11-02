@@ -11,4 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: clang 1_jakub.c
-      - run: ./a.out <test.in
+      - run: ./a.out <test.in >test.out.actual
+      - run: diff test.out test.out.actual
